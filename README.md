@@ -2,11 +2,9 @@
 
 Uses NiFi to download historical financial data from various sources.
 
-Is used to synchronise ticker data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
+It can be used to synchronise data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
 
 Though it focuses on the ASX, it could easily be adjusted to suit any financial market and trading platform.
-
-# Setup Instructions
 
 # Setup Instructions
 
