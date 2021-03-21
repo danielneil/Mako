@@ -1,8 +1,8 @@
-# Using-NiFi-on-Yahoo-Finance
+# Mako
 
-Demostrates how to use NiFi to download historical financial data from Yahoo Finance.
+Uses NiFi to download historical financial data from various sources.
 
-Synchronises the ticker data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
+Is used to synchronise ticker data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
 
 Though it focuses on the ASX, it could easily be adjusted to suit any financial market and trading platform.
 
