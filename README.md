@@ -4,8 +4,6 @@ Uses NiFi to download historical financial data from various sources.
 
 It can be used to synchronise data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
 
-Though it focuses on the ASX, it could easily be adjusted to suit any financial market and trading platform.
-
 # Setup Instructions
 
 1. Prepare a vanilla Debian Server with VirtualBox ([help](https://linuxhint.com/install_debian10_virtualbox/)).
