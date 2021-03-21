@@ -8,14 +8,18 @@ Though it focuses on the ASX, it could easily be adjusted to suit any financial 
 
 # Setup Instructions
 
-1. Install ansible on your local machine.
+# Setup Instructions
 
-2. Prepare a vanilla Debian server.
+1. Prepare a vanilla Debian Server with VirtualBox ([help](https://linuxhint.com/install_debian10_virtualbox/)).
 
-3. Add its IP address to the ./hosts files under [nifi-server]
+2. Install ansible ([help](https://linuxhint.com/install_ansible_debian10/)).
 
-4. Run: 
+3. Install Git ([help](https://linuxhint.com/install_git_debian_10/)).
+
+4. Open a terminal, and run:
 ```
-./build.sh
+git clone https://github.com/danielneil/Mako.git && cd Mako && ./build.sh
+
+# The build takes about 5 mins.
 ```
 5. Navigate to https://nifi-server:8080/nifi. 
