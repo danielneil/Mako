@@ -15,7 +15,5 @@ It can be used to synchronise data for the [Shark Algorithmic Trading Platform](
 4. Open a terminal, and run:
 ```
 git clone https://github.com/danielneil/Mako.git && cd Mako && ./build.sh
-
-# The build takes about 5 mins.
 ```
 5. Navigate to https://nifi-server:8080/nifi. 
