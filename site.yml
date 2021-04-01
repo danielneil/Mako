@@ -1,0 +1,8 @@
+---
+- name: Mako - Shark's data getterer
+  hosts: shark-nifi-server
+  become: true
+  roles:
+  - nifi
+  - mako
+  
