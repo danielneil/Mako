@@ -1,2 +1,10 @@
 ---
-# tasks file for nifi
+- name: Creating shark working directory
+  file:
+    name: /shark
+    owner: shark
+    group: shark
+    state: directory
+
+- name: Downloading nifi
+  shell: cd /shark && wget -N https://www.apache.org/dyn/closer.lua?path=/nifi/1.13.2/nifi-1.13.2-bin.tar.gz
