@@ -1,2 +1,7 @@
 ---
 # tasks file for make
+
+- name: Copying the ticker data sample.
+  copy:
+   src: ticker-data
+   dest: /opt/nifi/
