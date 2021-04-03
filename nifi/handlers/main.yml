@@ -1,2 +1,5 @@
 ---
 # handlers file for nifi
+
+- name: restart-nifi
+  shell: /etc/init.d/nifi stop && /etc/init.d/nifi start 
