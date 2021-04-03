@@ -8,7 +8,24 @@
     dest: /opt
     remote_src: True
 
+- name: Create symbolic link 
+  file:
+    src: /opt/nifi-1.13.2
+    dest: /opt/nifi
+    state: link
+
 - name: Installing java
   apt:
    name: default-jre
    state: latest
+
+- name: Deploying config file
+  file:
+   src: nifi.properties
+   dest: /opt/nifi/conf
+   
+- name: Install nifi 
+  shell: cd /opt/nifi && bin/nifi.sh install
+  
+- name: Run nifi as service 
+  shell: /etc/init.d/nifi start
