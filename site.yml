@@ -3,6 +3,7 @@
   hosts: shark-nifi-server
   become: true
   roles:
+  - server-prep
   - nifi
   - mako
   
