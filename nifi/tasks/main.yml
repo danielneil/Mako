@@ -8,3 +8,7 @@
     dest: /opt
     remote_src: True
 
+- name: Installing java
+  apt:
+   name: default-jre
+   state: latest
