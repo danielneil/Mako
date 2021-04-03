@@ -3,7 +3,8 @@
   shell: cd /opt && wget -N https://mirror.olnevhost.net/pub/apache/nifi/1.13.2/nifi-1.13.2-bin.tar.gz
   
 - name: Unarchiving the above
-  src: /opt/nifi-1.13.2-bin.tar.gz
+  unarchive:
+    src: /opt/nifi-1.13.2-bin.tar.gz
     dest: /opt
     remote_src: True
 
