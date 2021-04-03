@@ -20,9 +20,10 @@
    state: latest
 
 - name: Deploying config file
-  file:
+  template:
    src: nifi.properties
    dest: /opt/nifi/conf
+  notify: restart-nifi
    
 - name: Install nifi 
   shell: cd /opt/nifi && bin/nifi.sh install
