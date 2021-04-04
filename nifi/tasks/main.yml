@@ -20,7 +20,7 @@
    state: latest
 
 - name: Deploying Flow Configuration
-  template:
+  copy:
    src: flow.xml.gz
    dest: /opt/nifi/conf/
   notify: restart-nifi
