@@ -1,2 +1,4 @@
 ---
 # vars file for nifi
+
+nifi_version: 1.14.0
