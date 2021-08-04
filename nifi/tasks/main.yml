@@ -1,18 +1,12 @@
 ---
 - name: Downloading nifi
-  shell: cd /opt && wget -N https://apache.mirror.digitalpacific.com.au/nifi/1.14.0/nifi-1.14.0-bin.tar.gz
+  shell: cd /opt && wget -N https://apache.mirror.digitalpacific.com.au/nifi/{{ nifi_version }}/nifi-{{ nifi_version }}-bin.tar.gz
   
 - name: Unarchiving the above
   unarchive:
-    src: /opt/nifi-1.14.0-bin.tar.gz
+    src: /opt/nifi-{{ nifi_version }}-bin.tar.gz
     dest: /opt
     remote_src: True
-
-- name: Create symbolic link 
-  file:
-    src: /opt/nifi-1.14.0
-    dest: /opt/nifi
-    state: link
 
 - name: Installing java
   apt:
@@ -32,7 +26,7 @@
 #  notify: restart-nifi
    
 - name: Install nifi 
-  shell: cd /opt/nifi && bin/nifi.sh install
+  shell: cd /opt/nifi-{{ nifi_version }} && bin/nifi.sh install
   
 - name: Run nifi as service 
   shell: /etc/init.d/nifi start
