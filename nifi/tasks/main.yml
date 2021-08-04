@@ -25,11 +25,11 @@
 #   dest: /opt/nifi/conf/
 #  notify: restart-nifi
 
-- name: Deploying config file
-  template:
-   src: nifi.properties
-   dest: /opt/nifi/conf
-  notify: restart-nifi
+#- name: Deploying config file
+#  template:
+#  src: nifi.properties
+#   dest: /opt/nifi/conf
+#  notify: restart-nifi
    
 - name: Install nifi 
   shell: cd /opt/nifi && bin/nifi.sh install
