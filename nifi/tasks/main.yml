@@ -4,13 +4,13 @@
   
 - name: Unarchiving the above
   unarchive:
-    src: /opt/nifi-1.13.2-bin.tar.gz
+    src: /opt/nifi-1.14.0-bin.tar.gz
     dest: /opt
     remote_src: True
 
 - name: Create symbolic link 
   file:
-    src: /opt/nifi-1.13.2
+    src: /opt/nifi-1.14.0
     dest: /opt/nifi
     state: link
 
