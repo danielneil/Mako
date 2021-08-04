@@ -1,6 +1,6 @@
 ---
 - name: Downloading nifi
-  shell: cd /opt && wget -N https://www.apache.org/dyn/closer.lua?path=/nifi/1.14.0/nifi-1.14.0-bin.tar.gz
+  shell: cd /opt && wget -N https://apache.mirror.digitalpacific.com.au/nifi/1.14.0/nifi-1.14.0-bin.tar.gz
   
 - name: Unarchiving the above
   unarchive:
