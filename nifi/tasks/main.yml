@@ -9,7 +9,7 @@
     remote_src: True
 
 - name: Installing java
-  apt:
+  package:
    name: default-jre
    state: latest
 
