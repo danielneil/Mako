@@ -6,26 +6,26 @@
    name: "{{ timezone }}"
 
 - name: Updating System
-  apt: 
+  package: 
    update_cache: yes
 
 - name: Installing rsync
-  apt:
+  package:
    name: rsync
    state: latest
 
 - name: Install curl
-  apt:
+  package:
    name: curl
    state: latest
    
 - name: Install net-tools
-  apt:
+  package:
    name: net-tools
    state: latest   
    
 - name: Install java (required for Apache Nifi )
-  apt:
+  package:
    name: default-jre
    state: latest
 
