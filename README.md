@@ -1,6 +1,6 @@
 # Mako
 
-Uses NiFi to download historical financial data from various sources.
+Uses NiFi to download financial data from various sources.
 
 It can be used to synchronise data for the [Shark Algorithmic Trading Platform](https://github.com/danielneil/Shark).
 
